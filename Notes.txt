@@ -1,0 +1,41 @@
+https://gitlab.com/cloudbinary/staragile_awsdevops_20220326.git
+
+Prerequisites :
+1. IDE Tool : Visual Studio Code : https://code.visualstudio.com/
+2. SCM / VCS Tool : Git : http://git-scm.com/
+3. AWS Cloud Account : https://aws.amazon.com/free
+Prerequisites :
+
+
+1. IDE Tool : Visual Studio Code : https://code.visualstudio.com/
+
+
+2. SCM / VCS Tool : Git : http://git-scm.com/
+
+
+3. AWS Cloud Account : https://aws.amazon.com/free 
+
+
+4. AWS CLI : https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+Windows : https://awscli.amazonaws.com/AWSCLIV2.msi 
+MacOS : https://awscli.amazonaws.com/AWSCLIV2.pkg
+
+0327:
+aws ec2 run-instances \
+--image-id "ami-04505e74c0741db8d" \
+--instance-type "t2.micro" \
+--count 1 \
+--subnet-id "subnet-0f48f8e9def0a09a5" \
+--security-group-ids "sg-0a599ee546a021e8c" \
+--key-name "nvirgina_keys" \
+--tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=server-From-CLI},{Key=CreatedBy,Value=awscli}]' \
+
+
+# ps -aux | grep apache2
+# ls -lrt /var/www/html
+
+https://github.com/The-Codesis/simple-static-website
+
+
+https://github.com/The-Codesis/simple-static-website
+
